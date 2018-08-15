@@ -15,6 +15,7 @@ func TestClient(t *testing.T) {
 	}
 
 	client := NewClient()
+	client.Init(ServerIP)
 	client.Start()
 	go client.clientTest()
 
